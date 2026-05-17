@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="Bank Mandiri">
+  <rect width="200" height="200" rx="28" fill="#fff6e5" />
+  <rect x="18" y="18" width="164" height="164" rx="22" fill="#f28c28" />
+  <text x="100" y="102" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Mandiri</text>
+  <text x="100" y="130" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff">Bank</text>
+</svg>

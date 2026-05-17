@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Publication fees, payment methods, and payment steps for CASTLE." data-id="Biaya publikasi, metode pembayaran, dan tahapan pembayaran CASTLE." data-en="Publication fees, payment methods, and payment steps for CASTLE." />
+  <title data-id="Biaya - CASTLE" data-en="Fees - CASTLE">Fees - CASTLE</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/images/CASTLE.png" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/CASTLE.png" alt="CASTLE Logo" class="nav-logo-img" />
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" data-id="Beranda" data-en="Home">Home</a></li>
+        <li><a href="speakers.html" class="nav-link" data-id="Pembicara" data-en="Speakers">Speakers</a></li>
+        <li><a href="publications.html" class="nav-link" data-id="Publikasi" data-en="Publications">Publications</a></li>
+        <li><a href="timeline.html" class="nav-link" data-id="Linimasa" data-en="Timeline">Timeline</a></li>
+        <li><a href="fees.html" class="nav-link active" data-id="Biaya" data-en="Fees">Fees</a></li>
+        <li><a href="archives.html" class="nav-link" data-id="Arsip" data-en="Archives">Archives</a></li>
+      </ul>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScqRiktt5jsENc5pPTQ9DQu8Id-3bq5mSCtQRD8NSwom6I1XQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta" data-id="Kirim Makalah" data-en="Submit Paper">Submit Paper</a>
+      <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Ganti bahasa ke Indonesia">ID</button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <span class="section-tag" data-id="Biaya" data-en="Fees">Fees</span>
+      <h1 class="page-title" data-id="Biaya Publikasi dan Pembayaran" data-en="Publication Fees and Payment">Publication Fees and Payment</h1>
+      <p class="page-subtitle" data-id="Informasi lengkap mengenai biaya publikasi, metode pembayaran, dan langkah verifikasi." data-en="Complete information on publication fees, payment methods, and verification steps.">Complete information on publication fees, payment methods, and verification steps.</p>
+    </div>
+  </header>
+
+  <section class="fee-section" id="fees">
+    <div class="container">
+      <div class="publication-fee-table-wrap" data-aos="fade-up">
+        <table class="publication-fee-table">
+          <thead>
+            <tr>
+              <th scope="col" data-id="Jenis" data-en="Type">Type</th>
+              <th scope="col" data-id="Universitas Negeri Jakarta" data-en="Universitas Negeri Jakarta">Universitas Negeri Jakarta</th>
+              <th scope="col" data-id="Non-Universitas Lokal" data-en="Non-Universitas Lokal">Non-Universitas Lokal</th>
+              <th scope="col" data-id="Internasional" data-en="International">International</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-id="Proceedings of Castle (PoC)" data-en="Proceedings of Castle (PoC)">Proceedings of Castle (PoC)</th>
+              <td><span class="fee-badge" data-id="Gratis" data-en="Free">Free</span></td>
+              <td><span class="fee-badge" data-id="Gratis" data-en="Free">Free</span></td>
+              <td><span class="fee-badge" data-id="Gratis" data-en="Free">Free</span></td>
+            </tr>
+            <tr>
+              <th scope="row" data-id="Journal of Castle (JoC)" data-en="Journal of Castle (JoC)">Journal of Castle (JoC)</th>
+              <td><span class="fee-badge" data-id="Gratis" data-en="Free">Free</span></td>
+              <td><span class="fee-badge" data-id="Gratis" data-en="Free">Free</span></td>
+              <td><span class="fee-badge" data-id="Gratis" data-en="Free">Free</span></td>
+            </tr>
+            <tr>
+              <th scope="row" data-id="Jurnal Risenologi" data-en="Risenologi Journal">Risenologi Journal</th>
+              <td class="fee-amount">IDR 500,000</td>
+              <td class="fee-amount">IDR 700,000</td>
+              <td class="fee-amount">USD 40.64</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="payment-detail" data-aos="fade-up" data-payment-widget>
+        <div class="payment-intro">
+          <h2 data-id="Pilih Metode Pembayaran" data-en="Choose Payment Method">Choose Payment Method</h2>
+          <p data-id="Klik salah satu opsi untuk melihat akun tujuan dan tahapan pembayarannya." data-en="Click one option to view destination account details and payment steps.">Click one option to view destination account details and payment steps.</p>
+        </div>
+
+        <div class="payment-options" role="tablist" aria-label="Payment methods">
+          <button class="payment-option is-active" type="button" data-payment-method="paypal" aria-pressed="true">
+            <img src="assets/images/paypal.svg" alt="PayPal logo" />
+            <span>PayPal</span>
+          </button>
+          <button class="payment-option" type="button" data-payment-method="mandiri" aria-pressed="false">
+            <img src="assets/images/mandiri.svg" alt="Bank Mandiri logo" />
+            <span>Bank Mandiri</span>
+          </button>
+          <button class="payment-option" type="button" data-payment-method="qris" aria-pressed="false">
+            <img src="assets/images/qris.svg" alt="QRIS logo" />
+            <span>QRIS</span>
+          </button>
+        </div>
+
+        <div class="payment-panels">
+          <div class="payment-panel is-active" data-payment-method="paypal">
+            <img class="payment-panel-logo" src="assets/images/paypal.svg" alt="PayPal logo" />
+            <div>
+              <h3>PayPal</h3>
+              <p><a href="https://www.paypal.me/CastleUNJ" target="_blank" rel="noopener noreferrer">paypal.me/CastleUNJ</a></p>
+              <p data-id="p.p. Aida Makbullah / @CastleUNJ" data-en="p.p. Aida Makbullah / @CastleUNJ">p.p. Aida Makbullah / @CastleUNJ</p>
+              <ol>
+                <li data-id="Masuk ke PayPal dan pilih Send Money." data-en="Sign in to PayPal and choose Send Money.">Sign in to PayPal and choose Send Money.</li>
+                <li data-id="Kirim ke paypal.me/CastleUNJ sesuai nominal invoice." data-en="Send to paypal.me/CastleUNJ based on the invoice amount.">Send to paypal.me/CastleUNJ based on the invoice amount.</li>
+                <li data-id="Tambahkan catatan nama penulis dan judul artikel." data-en="Add a note with the author name and paper title.">Add a note with the author name and paper title.</li>
+                <li data-id="Simpan bukti transaksi untuk verifikasi panitia." data-en="Save the transaction proof for committee verification.">Save the transaction proof for committee verification.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="payment-panel" data-payment-method="mandiri">
+            <img class="payment-panel-logo" src="assets/images/mandiri.svg" alt="Bank Mandiri logo" />
+            <div>
+              <h3>Bank Mandiri</h3>
+              <p>60013851385</p>
+              <p data-id="p.p. Adellia Disya Saputri" data-en="p.p. Adellia Disya Saputri">p.p. Adellia Disya Saputri</p>
+              <ol>
+                <li data-id="Transfer ke rekening Mandiri sesuai nominal invoice." data-en="Transfer to the Mandiri account using the invoice amount.">Transfer to the Mandiri account using the invoice amount.</li>
+                <li data-id="Gunakan catatan transfer dengan nama penulis." data-en="Use the transfer note with the author name.">Use the transfer note with the author name.</li>
+                <li data-id="Simpan bukti transfer untuk verifikasi panitia." data-en="Save the transfer proof for committee verification.">Save the transfer proof for committee verification.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="payment-panel" data-payment-method="qris">
+            <img class="payment-panel-logo" src="assets/images/qris.svg" alt="QRIS logo" />
+            <div>
+              <h3>QRIS</h3>
+              <p data-id="p.p. KPM MARKET, PL GDNG" data-en="p.p. KPM MARKET, PL GDNG">p.p. KPM MARKET, PL GDNG</p>
+              <ol>
+                <li data-id="Scan QRIS menggunakan aplikasi pembayaran Anda." data-en="Scan the QRIS code using your payment app.">Scan the QRIS code using your payment app.</li>
+                <li data-id="Masukkan nominal sesuai invoice dan selesaikan pembayaran." data-en="Enter the invoice amount and complete the payment.">Enter the invoice amount and complete the payment.</li>
+                <li data-id="Simpan bukti pembayaran untuk verifikasi panitia." data-en="Save the payment proof for committee verification.">Save the payment proof for committee verification.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <p class="payment-note" data-id="Simpan bukti pembayaran untuk proses verifikasi panitia." data-en="Keep your payment proof for committee verification.">Keep your payment proof for committee verification.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-section alt">
+    <div class="container">
+      <div class="important-note-panel" data-aos="fade-up">
+        <div class="important-note-heading">
+          <span class="section-tag" data-id="Catatan Penting" data-en="Important Notes">Important Notes</span>
+          <h2 data-id="Pastikan pembayaran mudah diverifikasi." data-en="Make sure payment can be verified easily.">Make sure payment can be verified easily.</h2>
+          <p data-id="Simpan bukti transaksi dan gunakan identitas penulis yang sama dengan data registrasi." data-en="Keep transaction proof and use the same author identity as the registration data.">Keep transaction proof and use the same author identity as the registration data.</p>
+        </div>
+        <div class="important-note-grid">
+        <article class="important-note-item">
+          <h3 data-id="Biaya Berlaku" data-en="Fees Apply">Fees Apply</h3>
+          <p class="detail-desc" data-id="Biaya hanya untuk manuskrip yang diterima pada jalur publikasi." data-en="Fees apply only to accepted manuscripts in the chosen route.">Fees apply only to accepted manuscripts in the chosen route.</p>
+        </article>
+        <article class="important-note-item">
+          <h3 data-id="Verifikasi" data-en="Verification">Verification</h3>
+          <p class="detail-desc" data-id="Simpan bukti pembayaran hingga konfirmasi diterima." data-en="Keep payment proof until confirmation is received.">Keep payment proof until confirmation is received.</p>
+        </article>
+        <article class="important-note-item">
+          <h3 data-id="Mata Uang" data-en="Currency">Currency</h3>
+          <p class="detail-desc" data-id="Tarif internasional menggunakan USD sesuai informasi resmi." data-en="International fees use USD based on official information.">International fees use USD based on official information.</p>
+        </article>
+        <article class="important-note-item">
+          <h3 data-id="Konfirmasi" data-en="Confirmation">Confirmation</h3>
+          <p class="detail-desc" data-id="Konfirmasi bukti pembayaran ke Fathya atau Zikri melalui WhatsApp resmi." data-en="Confirm payment proof to Fathya or Zikri through the official WhatsApp contacts.">Confirm payment proof to Fathya or Zikri through the official WhatsApp contacts.</p>
+        </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/images/CASTLE.png" alt="CASTLE Logo" class="footer-logo" />
+          </a>
+          <p class="footer-tagline" data-id="Conference on Social, Science, Technology, Language, and Education Research." data-en="Conference on Social, Science, Technology, Language, and Education Research.">Conference on Social, Science, Technology, Language, and Education Research.</p>
+          <p data-id="CASTLE adalah platform konferensi akademik internasional yang didedikasikan untuk memajukan riset, inovasi, dan kolaborasi interdisipliner dalam pendidikan, sains, teknologi, studi sosial, dan bahasa." data-en="CASTLE is an international academic conference platform dedicated to advancing research, innovation, and interdisciplinary collaboration in education, science, technology, social studies, and language.">CASTLE is an international academic conference platform dedicated to advancing research, innovation, and interdisciplinary collaboration in education, science, technology, social studies, and language.</p>
+          <div class="footer-socials">
+            <a href="mailto:castle@unj.ac.id" class="footer-social" aria-label="CASTLE Email" data-id="<span class='footer-icon'>✉</span>Email" data-en="<span class='footer-icon'>✉</span>Email"><span class="footer-icon">✉</span>Email</a>
+            <a href="https://www.instagram.com/expokpm/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="CASTLE Instagram" data-id="<span class='footer-icon'>◎</span>Instagram" data-en="<span class='footer-icon'>◎</span>Instagram"><span class="footer-icon">◎</span>Instagram</a>
+            <a href="https://wa.me/6285814728638" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="WhatsApp Fathya" data-id="<span class='footer-icon'>☎</span>WA Fathya" data-en="<span class='footer-icon'>☎</span>WA Fathya"><span class="footer-icon">☎</span>WA Fathya</a>
+            <a href="https://wa.me/6285810680619" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="WhatsApp Zikri" data-id="<span class='footer-icon'>☎</span>WA Zikri" data-en="<span class='footer-icon'>☎</span>WA Zikri"><span class="footer-icon">☎</span>WA Zikri</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-id="Navigasi" data-en="Navigation">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-id="Beranda" data-en="Home">Home</a></li>
+            <li><a href="speakers.html" data-id="Pembicara" data-en="Speakers">Speakers</a></li>
+            <li><a href="publications.html" data-id="Publikasi" data-en="Publications">Publications</a></li>
+            <li><a href="timeline.html" data-id="Linimasa" data-en="Timeline">Timeline</a></li>
+            <li><a href="fees.html" data-id="Biaya" data-en="Fees">Fees</a></li>
+            <li><a href="archives.html" data-id="Arsip" data-en="Archives">Archives</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-id="Kontak" data-en="Contact">Contact</h4>
+          <ul>
+            <li><a href="mailto:castle@unj.ac.id" data-id="castle@unj.ac.id" data-en="castle@unj.ac.id">castle@unj.ac.id</a></li>
+            <li><a href="https://www.instagram.com/expokpm/" target="_blank" rel="noopener noreferrer" data-id="Instagram @expokpm" data-en="Instagram @expokpm">Instagram @expokpm</a></li>
+            <li><a href="https://wa.me/6285814728638" target="_blank" rel="noopener noreferrer" data-id="WhatsApp +62 858-1472-8638 (Fathya)" data-en="WhatsApp +62 858-1472-8638 (Fathya)">WhatsApp +62 858-1472-8638 (Fathya)</a></li>
+            <li><a href="https://wa.me/6285810680619" target="_blank" rel="noopener noreferrer" data-id="WhatsApp +62 858-1068-0619 (Zikri)" data-en="WhatsApp +62 858-1068-0619 (Zikri)">WhatsApp +62 858-1068-0619 (Zikri)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-id="&copy; 2026 CASTLE Conference. Seluruh hak cipta dilindungi." data-en="&copy; 2026 CASTLE Conference. All rights reserved.">&copy; 2026 CASTLE Conference. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

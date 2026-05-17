@@ -82,7 +82,8 @@
   // ────────────────────────────────────────────────────────
   const sections = $$('section[id]');
   const navLinks = $$('.nav-link');
-  if (sections.length && navLinks.length) {
+  const anchorNavLinks = navLinks.filter((link) => link.getAttribute('href')?.startsWith('#'));
+  if (sections.length && anchorNavLinks.length) {
     const updateActiveLink = () => {
       const scrollPos = window.scrollY + 120;
       sections.forEach((section) => {
@@ -90,7 +91,7 @@
         const bottom = top + section.offsetHeight;
         const id = section.getAttribute('id');
         if (scrollPos >= top && scrollPos < bottom) {
-          navLinks.forEach((link) => {
+          anchorNavLinks.forEach((link) => {
             link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
           });
         }
@@ -205,6 +206,76 @@
       showSlide(0);
       startAutoPlay();
     }
+  }
+
+  // ────────────────────────────────────────────────────────
+  // PAYMENT METHOD TOGGLE
+  // ────────────────────────────────────────────────────────
+  const paymentWidgets = $$('[data-payment-widget]');
+  if (paymentWidgets.length) {
+    paymentWidgets.forEach((widget) => {
+      const options = $$('.payment-option', widget);
+      const panels = $$('.payment-panel', widget);
+      if (!options.length || !panels.length) return;
+
+      const setActive = (method) => {
+        options.forEach((option) => {
+          const isActive = option.dataset.paymentMethod === method;
+          option.classList.toggle('is-active', isActive);
+          option.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+        panels.forEach((panel) => {
+          panel.classList.toggle('is-active', panel.dataset.paymentMethod === method);
+        });
+      };
+
+      const defaultMethod = options[0].dataset.paymentMethod;
+      if (defaultMethod) setActive(defaultMethod);
+
+      options.forEach((option) => {
+        option.addEventListener('click', () => setActive(option.dataset.paymentMethod));
+      });
+    });
+  }
+
+  // ────────────────────────────────────────────────────────
+  // TIMELINE COMPLETED STATE
+  // ────────────────────────────────────────────────────────
+  const datedTimelineItems = $$('[data-end-date]');
+  if (datedTimelineItems.length) {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    datedTimelineItems.forEach((item) => {
+      const endDate = new Date(`${item.dataset.endDate}T23:59:59+07:00`);
+      if (!Number.isNaN(endDate.getTime()) && endDate < today) {
+        item.classList.add('is-complete');
+      }
+    });
+  }
+
+  const publicationWidgets = $$('[data-publication-widget]');
+  if (publicationWidgets.length) {
+    publicationWidgets.forEach((widget) => {
+      const choices = $$('.publication-choice', widget);
+      const panels = $$('[data-publication-panel]', widget);
+      if (!choices.length || !panels.length) return;
+
+      const setPublication = (target) => {
+        choices.forEach((choice) => {
+          const isActive = choice.dataset.publicationTarget === target;
+          choice.classList.toggle('is-active', isActive);
+          choice.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+        panels.forEach((panel) => {
+          panel.classList.toggle('is-active', panel.dataset.publicationPanel === target);
+        });
+      };
+
+      choices.forEach((choice) => {
+        choice.addEventListener('click', () => setPublication(choice.dataset.publicationTarget));
+      });
+    });
   }
 
 })();

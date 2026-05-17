@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Publication routes, scope, and submission flow for CASTLE." data-id="Jalur publikasi, ruang lingkup, dan alur pengiriman CASTLE." data-en="Publication routes, scope, and submission flow for CASTLE." />
+  <title data-id="Publikasi - CASTLE" data-en="Publications - CASTLE">Publications - CASTLE</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/images/CASTLE.png" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/CASTLE.png" alt="CASTLE Logo" class="nav-logo-img" />
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" data-id="Beranda" data-en="Home">Home</a></li>
+        <li><a href="speakers.html" class="nav-link" data-id="Pembicara" data-en="Speakers">Speakers</a></li>
+        <li><a href="publications.html" class="nav-link active" data-id="Publikasi" data-en="Publications">Publications</a></li>
+        <li><a href="timeline.html" class="nav-link" data-id="Linimasa" data-en="Timeline">Timeline</a></li>
+        <li><a href="fees.html" class="nav-link" data-id="Biaya" data-en="Fees">Fees</a></li>
+        <li><a href="archives.html" class="nav-link" data-id="Arsip" data-en="Archives">Archives</a></li>
+      </ul>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScqRiktt5jsENc5pPTQ9DQu8Id-3bq5mSCtQRD8NSwom6I1XQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta" data-id="Kirim Makalah" data-en="Submit Paper">Submit Paper</a>
+      <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Ganti bahasa ke Indonesia">ID</button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <span class="section-tag" data-id="Publikasi" data-en="Publications">Publications</span>
+      <h1 class="page-title" data-id="Jalur Publikasi Akademik" data-en="Academic Publication Pathways">Academic Publication Pathways</h1>
+      <p class="page-subtitle" data-id="Informasi detail mengenai jalur publikasi, ruang lingkup, serta alur seleksi dan editorial." data-en="Detailed information about publication routes, scope, and the selection and editorial flow.">Detailed information about publication routes, scope, and the selection and editorial flow.</p>
+    </div>
+  </header>
+
+  <section class="detail-section">
+    <div class="container">
+      <div class="publication-notice" data-aos="fade-up">
+        <div>
+          <h2 data-id="Mulai dari abstrak, lanjutkan ke publikasi." data-en="Start with the abstract, continue to publication.">Start with the abstract, continue to publication.</h2>
+          <p data-id="Kirim abstrak sesuai jadwal CASTLE. Setelah diterima, siapkan full paper menggunakan template dan author guidelines dari jalur publikasi yang dipilih." data-en="Submit your abstract according to the CASTLE timeline. After acceptance, prepare the full paper using the template and author guidelines from your selected publication route.">Submit your abstract according to the CASTLE timeline. After acceptance, prepare the full paper using the template and author guidelines from your selected publication route.</p>
+        </div>
+        <div class="publication-action-row">
+          <a class="btn btn-primary" href="https://drive.google.com/drive/folders/1xR1nL5bZ90DsMQbTSslLKQr2Mi-d5Nf9" target="_blank" rel="noopener noreferrer" data-id="Template Abstrak" data-en="Abstract Template">Abstract Template</a>
+          <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLScqRiktt5jsENc5pPTQ9DQu8Id-3bq5mSCtQRD8NSwom6I1XQ/viewform" target="_blank" rel="noopener noreferrer" data-id="Submit Abstrak" data-en="Submit Abstract">Submit Abstract</a>
+          <a class="btn btn-secondary" href="https://drive.google.com/drive/folders/1xR1nL5bZ90DsMQbTSslLKQr2Mi-d5Nf9" target="_blank" rel="noopener noreferrer" data-id="Buku Pedoman CASTLE" data-en="CASTLE Guide Book">CASTLE Guide Book</a>
+        </div>
+      </div>
+
+      <div class="publication-choice-shell" data-aos="fade-up" data-publication-widget>
+        <div class="publication-choice-grid" role="tablist" aria-label="Publication options">
+          <button class="publication-choice is-active" type="button" data-publication-target="poc" aria-pressed="true">
+            <div class="publication-cover">
+              <img src="assets/images/poc.png" alt="Proceedings of Castle cover" />
+            </div>
+            <div class="publication-summary-body">
+              <h3>Proceedings of Castle (PoC)</h3>
+              <p data-id="Terbit 1x/tahun pada Oktober." data-en="Published once a year in October.">Published once a year in October.</p>
+              <span class="publication-toggle" data-id="Lihat detail" data-en="View details">View details</span>
+            </div>
+          </button>
+
+          <button class="publication-choice" type="button" data-publication-target="joc" aria-pressed="false">
+            <div class="publication-cover">
+              <img src="assets/images/joc.png" alt="Journal of Castle cover" />
+            </div>
+            <div class="publication-summary-body">
+              <h3>Journal of Castle (JoC)</h3>
+              <p data-id="Terbit 2x/tahun: April dan Oktober." data-en="Published twice a year: April and October.">Published twice a year: April and October.</p>
+              <span class="publication-toggle" data-id="Lihat detail" data-en="View details">View details</span>
+            </div>
+          </button>
+
+          <button class="publication-choice" type="button" data-publication-target="risenologi" aria-pressed="false">
+            <div class="publication-cover">
+              <img src="assets/images/risenologi.png" alt="Risenologi cover" />
+            </div>
+            <div class="publication-summary-body">
+              <h3>Risenologi</h3>
+              <p data-id="Terbit 2x/tahun; contoh issue terakhir: Desember 2025." data-en="Published twice a year; latest issue example: December 2025.">Published twice a year; latest issue example: December 2025.</p>
+              <span class="publication-toggle" data-id="Lihat detail" data-en="View details">View details</span>
+            </div>
+          </button>
+        </div>
+
+        <div class="publication-detail-stage">
+          <article class="publication-details is-active" data-publication-panel="poc">
+            <p class="detail-desc" data-id="Prosiding interdisipliner hasil konferensi CASTLE untuk bidang sosial, sains, teknologi, bahasa, dan pendidikan. Jadwal publikasi utama: Oktober." data-en="Interdisciplinary CASTLE conference proceedings for social, science, technology, language, and education papers. Main publication month: October.">Interdisciplinary CASTLE conference proceedings for social, science, technology, language, and education papers. Main publication month: October.</p>
+            <ul class="publication-guidelines">
+              <li data-id="Gunakan template resmi sebelum mengirim naskah lengkap." data-en="Use the official template before submitting the full paper.">Use the official template before submitting the full paper.</li>
+              <li data-id="Naskah mengikuti proses seleksi dan editorial konferensi." data-en="Manuscripts follow the conference selection and editorial process.">Manuscripts follow the conference selection and editorial process.</li>
+            </ul>
+            <div class="publication-links">
+              <a href="https://journal.unj.ac.id/unj/index.php/castle/authorguidelines" target="_blank" rel="noopener noreferrer" data-id="Panduan Penulis" data-en="Author Guidelines">Author Guidelines</a>
+              <a href="https://journal.unj.ac.id/unj/index.php/castle/manuscripttemplate" target="_blank" rel="noopener noreferrer" data-id="Template" data-en="Template">Template</a>
+              <a href="https://journal.unj.ac.id/unj/index.php/castle" target="_blank" rel="noopener noreferrer" data-id="Laman Jurnal" data-en="Journal Site">Journal Site</a>
+            </div>
+          </article>
+
+          <article class="publication-details" data-publication-panel="joc">
+            <p class="detail-desc" data-id="Jurnal akademik CASTLE. Berdasarkan pedoman penulis, jadwal publikasi Journal of Castle adalah April dan Oktober." data-en="CASTLE academic journal. Based on its author guideline, Journal of Castle publishes in April and October.">CASTLE academic journal. Based on its author guideline, Journal of Castle publishes in April and October.</p>
+            <ul class="publication-guidelines">
+              <li data-id="Gunakan template Journal of Castle dan gaya referensi APA." data-en="Use the Journal of Castle template and APA referencing style.">Use the Journal of Castle template and APA referencing style.</li>
+              <li data-id="Naskah diterima ditelaah oleh reviewer dan editor sebelum publikasi." data-en="Accepted manuscripts are reviewed by reviewers and editors before publication.">Accepted manuscripts are reviewed by reviewers and editors before publication.</li>
+            </ul>
+            <div class="publication-links">
+              <a href="https://journal.unj.ac.id/unj/index.php/jcu/authorguidelines" target="_blank" rel="noopener noreferrer" data-id="Panduan Penulis" data-en="Author Guidelines">Author Guidelines</a>
+              <a href="https://journal.unj.ac.id/unj/index.php/jcu/manuscripttemplate" target="_blank" rel="noopener noreferrer" data-id="Template" data-en="Template">Template</a>
+              <a href="https://journal.unj.ac.id/unj/index.php/jcu" target="_blank" rel="noopener noreferrer" data-id="Laman Jurnal" data-en="Journal Site">Journal Site</a>
+            </div>
+          </article>
+
+          <article class="publication-details" data-publication-panel="risenologi">
+            <p class="detail-desc" data-id="Jurnal multidisipliner LPPM UNJ untuk riset sains dan teknologi. Informasi jurnal menyebut frekuensi 2 issue per tahun." data-en="LPPM UNJ multidisciplinary journal for science and technology research. The journal information lists a frequency of 2 issues per year.">LPPM UNJ multidisciplinary journal for science and technology research. The journal information lists a frequency of 2 issues per year.</p>
+            <ul class="publication-guidelines">
+              <li data-id="Mulai 1 Maret 2025, pengiriman baru diarahkan melalui portal Risenologi UNJ." data-en="From 1 March 2025, new submissions are directed through the UNJ Risenologi portal.">From 1 March 2025, new submissions are directed through the UNJ Risenologi portal.</li>
+              <li data-id="Ikuti author guidelines dan template terbaru Risenologi sebelum submit." data-en="Follow the latest Risenologi author guidelines and template before submission.">Follow the latest Risenologi author guidelines and template before submission.</li>
+            </ul>
+            <div class="publication-links">
+              <a href="https://journal.unj.ac.id/unj/index.php/risenologi/authorguidelines" target="_blank" rel="noopener noreferrer" data-id="Panduan Penulis" data-en="Author Guidelines">Author Guidelines</a>
+              <a href="https://journal.unj.ac.id/unj/index.php/risenologi/manuscripttemplate" target="_blank" rel="noopener noreferrer" data-id="Template" data-en="Template">Template</a>
+              <a href="https://journal.unj.ac.id/unj/index.php/risenologi/login" target="_blank" rel="noopener noreferrer" data-id="Portal Submit" data-en="Submit Portal">Submit Portal</a>
+              <a href="https://journal.unj.ac.id/unj/index.php/risenologi/issue/archive" target="_blank" rel="noopener noreferrer" data-id="Arsip Issue" data-en="Issue Archive">Issue Archive</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-section alt publication-flow-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag" data-id="Alur Publikasi" data-en="Publication Flow">Publication Flow</span>
+        <h2 class="section-title" data-id="Tahapan Seleksi dan Editorial" data-en="Selection and Editorial Stages">Selection and Editorial Stages</h2>
+        <p class="section-desc" data-id="Alur ringkas dari pengiriman abstrak hingga publikasi." data-en="A concise flow from abstract submission to publication.">A concise flow from abstract submission to publication.</p>
+      </div>
+
+      <div class="detail-grid detail-grid--two publication-flow-grid" data-aos="fade-up">
+        <article class="detail-card">
+          <h3 data-id="Pengiriman Abstrak" data-en="Abstract Submission">Abstract Submission</h3>
+          <p class="detail-desc" data-id="Kirim abstrak sesuai jadwal Batch 1 atau Batch 2 untuk seleksi awal." data-en="Submit abstracts during Batch 1 or Batch 2 for initial selection.">Submit abstracts during Batch 1 or Batch 2 for initial selection.</p>
+        </article>
+        <article class="detail-card">
+          <h3 data-id="Invoice dan LoA" data-en="Invoice and LoA">Invoice and LoA</h3>
+          <p class="detail-desc" data-id="Peserta terpilih menerima invoice dan Letter of Acceptance." data-en="Selected participants receive an invoice and a Letter of Acceptance.">Selected participants receive an invoice and a Letter of Acceptance.</p>
+        </article>
+        <article class="detail-card">
+          <h3 data-id="Full Paper" data-en="Full Paper">Full Paper</h3>
+          <p class="detail-desc" data-id="Kirim naskah lengkap sesuai panduan publikasi untuk telaah editorial." data-en="Submit the full paper according to publication guidelines for editorial review.">Submit the full paper according to publication guidelines for editorial review.</p>
+        </article>
+        <article class="detail-card">
+          <h3 data-id="Keputusan Publikasi" data-en="Publication Decision">Publication Decision</h3>
+          <p class="detail-desc" data-id="Keputusan akhir mengikuti proses editorial dan kebijakan jurnal atau prosiding." data-en="Final decisions follow editorial review and journal or proceedings policy.">Final decisions follow editorial review and journal or proceedings policy.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/images/CASTLE.png" alt="CASTLE Logo" class="footer-logo" />
+          </a>
+          <p class="footer-tagline" data-id="Conference on Social, Science, Technology, Language, and Education Research." data-en="Conference on Social, Science, Technology, Language, and Education Research.">Conference on Social, Science, Technology, Language, and Education Research.</p>
+          <p data-id="CASTLE adalah platform konferensi akademik internasional yang didedikasikan untuk memajukan riset, inovasi, dan kolaborasi interdisipliner dalam pendidikan, sains, teknologi, studi sosial, dan bahasa." data-en="CASTLE is an international academic conference platform dedicated to advancing research, innovation, and interdisciplinary collaboration in education, science, technology, social studies, and language.">CASTLE is an international academic conference platform dedicated to advancing research, innovation, and interdisciplinary collaboration in education, science, technology, social studies, and language.</p>
+          <div class="footer-socials">
+            <a href="mailto:castle@unj.ac.id" class="footer-social" aria-label="CASTLE Email" data-id="<span class='footer-icon'>✉</span>Email" data-en="<span class='footer-icon'>✉</span>Email"><span class="footer-icon">✉</span>Email</a>
+            <a href="https://www.instagram.com/expokpm/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="CASTLE Instagram" data-id="<span class='footer-icon'>◎</span>Instagram" data-en="<span class='footer-icon'>◎</span>Instagram"><span class="footer-icon">◎</span>Instagram</a>
+            <a href="https://wa.me/6285814728638" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="WhatsApp Fathya" data-id="<span class='footer-icon'>☎</span>WA Fathya" data-en="<span class='footer-icon'>☎</span>WA Fathya"><span class="footer-icon">☎</span>WA Fathya</a>
+            <a href="https://wa.me/6285810680619" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="WhatsApp Zikri" data-id="<span class='footer-icon'>☎</span>WA Zikri" data-en="<span class='footer-icon'>☎</span>WA Zikri"><span class="footer-icon">☎</span>WA Zikri</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-id="Navigasi" data-en="Navigation">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-id="Beranda" data-en="Home">Home</a></li>
+            <li><a href="speakers.html" data-id="Pembicara" data-en="Speakers">Speakers</a></li>
+            <li><a href="publications.html" data-id="Publikasi" data-en="Publications">Publications</a></li>
+            <li><a href="timeline.html" data-id="Linimasa" data-en="Timeline">Timeline</a></li>
+            <li><a href="fees.html" data-id="Biaya" data-en="Fees">Fees</a></li>
+            <li><a href="archives.html" data-id="Arsip" data-en="Archives">Archives</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-id="Kontak" data-en="Contact">Contact</h4>
+          <ul>
+            <li><a href="mailto:castle@unj.ac.id" data-id="castle@unj.ac.id" data-en="castle@unj.ac.id">castle@unj.ac.id</a></li>
+            <li><a href="https://www.instagram.com/expokpm/" target="_blank" rel="noopener noreferrer" data-id="Instagram @expokpm" data-en="Instagram @expokpm">Instagram @expokpm</a></li>
+            <li><a href="https://wa.me/6285814728638" target="_blank" rel="noopener noreferrer" data-id="WhatsApp +62 858-1472-8638 (Fathya)" data-en="WhatsApp +62 858-1472-8638 (Fathya)">WhatsApp +62 858-1472-8638 (Fathya)</a></li>
+            <li><a href="https://wa.me/6285810680619" target="_blank" rel="noopener noreferrer" data-id="WhatsApp +62 858-1068-0619 (Zikri)" data-en="WhatsApp +62 858-1068-0619 (Zikri)">WhatsApp +62 858-1068-0619 (Zikri)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-id="&copy; 2026 CASTLE Conference. Seluruh hak cipta dilindungi." data-en="&copy; 2026 CASTLE Conference. All rights reserved.">&copy; 2026 CASTLE Conference. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
